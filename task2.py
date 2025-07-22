@@ -1,8 +1,6 @@
+sum = 0
 
-first_name = input("Enter your first name: ")
-last_name = input("Enter your last name: ")
+for num in range(1, 51):
+    sum += num 
 
-print("First Name:", first_name)
-print("Last Name:", last_name)
-
-print("Hello,"+first_name + " " + last_name +"! Welcome to the program!")
+print(f"The sum of Number from 1 to 50 is: {sum}")

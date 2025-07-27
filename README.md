@@ -1,95 +1,35 @@
----
-# Python Programs
+# Python Program for Factorial and Mathematical Calculations
 
-This repository contains solutions to two Python programming tasks.
+## Task Overview
 
-## Task 1: Check if a Number is Even or Odd
+This repository contains two Python programs that perform mathematical calculations using functions and the `math` module.
 
-### **Problem Statement**
+### Task 1: Calculate Factorial Using a Function
+This program defines a function that calculates the factorial of a given number, using a loop or recursion. The user is prompted to enter a number, and the factorial of the number is displayed.
 
-Write a Python program that:
+### Task 2: Mathematical Calculations Using the `math` Module
+This program asks the user to input a number and then calculates the following mathematical values:
+1. **Square Root**: The square root of the number.
+2. **Natural Logarithm (log base e)**: The natural logarithm of the number.
+3. **Sine**: The sine of the number (in radians).
 
-1. Takes an integer input from the user.
-2. Checks whether the number is even or odd using an if-else statement.
-3. Displays the result accordingly.
-
-### **Expected Output**
-
-The program should return an output like:
-
-```
-Enter an Nummber: 4
-4 is even Number.
-```
-
-### **How It Works**
-
-1. The program takes an integer input from the user.
-2. It checks if the number is divisible by 2 using the modulus operator (`%`).
-
-   * If the remainder is 0, the number is **even**.
-   * Otherwise, the number is **odd**.
-3. Based on the result, the program prints whether the number is even or odd.
+The program uses Python's built-in `math` module to perform these operations.
 
 ---
 
-## Task 2: Sum of Integers from 1 to 50 Using a Loop
+## Features
+- **Task 1**: Factorial calculation using a function, supporting both loop and recursion approaches.
+- **Task 2**: Utilizes the `math` module to calculate square root, natural logarithm, and sine of the entered number.
 
-### **Problem Statement**
+## Requirements
+- Python 3.x
+- The program uses Python's built-in `math` module (for Task 2).
 
-Write a Python program that:
+## How to Run
 
-1. Uses a `for` loop to iterate over numbers from 1 to 50.
-2. Calculates the sum of all integers in this range.
-3. Displays the final sum.
+### Task 1: Calculate Factorial Using a Function
 
-### **Expected Output**
-
-The program should return an output like:
-
-```
-The sum of Number from 1 to 50 is: 1275
-```
-
-### **How It Works**
-
-1. A variable `sum_of_numbers` is initialized to 0 to store the running total.
-2. The `for` loop iterates through numbers 1 to 50 (using `range(1, 51)`).
-3. In each iteration, the current number is added to `sum_of_numbers`.
-4. After the loop finishes, the program prints the final sum, which is the sum of integers from 1 to 50.
-
----
-
-## How to Run the Programs
-
-### **1. Check if a Number is Even or Odd:**
-
-* Copy the code for **Task 1** into a Python file (e.g., `task1.py`).
-
-* Run the program in the terminal using the command:
-
-  ```bash
-  task1.py
-  ```
-
-* Enter an integer when prompted, and the program will display whether the number is even or odd.
-
-### **2. Sum of Integers from 1 to 50 Using a Loop:**
-
-* Copy the code for **Task 2** into a Python file (e.g., `task2.py`).
-
-* Run the program in the terminal using the command:
-
-  ```bash
-task2.py
-```
-
-* The program will automatically calculate and display the sum of integers from 1 to 50.
-
----
-
-## License
-
-This repository is open-source and available for personal or educational use.
-
----
+1. Download or clone the repository.
+2. Open a terminal or command prompt.
+3. Navigate to the directory where the `factorial_program.py` script is located.
+4. Run the program by typing:

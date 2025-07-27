@@ -1,6 +1,11 @@
-sum = 0
+import math
 
-for num in range(1, 51):
-    sum += num 
+num = float(input("Enter a number: "))
 
-print(f"The sum of Number from 1 to 50 is: {sum}")
+sqrt_result = math.sqrt(num)
+log_result = math.log(num)
+sin_result = math.sin(num)
+
+print(f"The square root of {num} is: {sqrt_result}")
+print(f"The natural logarithm of {num} is: {log_result}")
+print(f"The sine of {num} (in radians) is: {sin_result}")

@@ -1,35 +1,61 @@
-# Python Program for Factorial and Mathematical Calculations
+# Python File Handling Tasks
 
-## Task Overview
+This repository contains two Python scripts that perform file handling tasks.
 
-This repository contains two Python programs that perform mathematical calculations using functions and the `math` module.
+## Task 1: Read a File and Handle Errors
 
-### Task 1: Calculate Factorial Using a Function
-This program defines a function that calculates the factorial of a given number, using a loop or recursion. The user is prompted to enter a number, and the factorial of the number is displayed.
+### Problem:
+1. Open and read `sample.txt`.
+2. Print its content line by line.
+3. Handle `FileNotFoundError` if the file does not exist.
 
-### Task 2: Mathematical Calculations Using the `math` Module
-This program asks the user to input a number and then calculates the following mathematical values:
-1. **Square Root**: The square root of the number.
-2. **Natural Logarithm (log base e)**: The natural logarithm of the number.
-3. **Sine**: The sine of the number (in radians).
+### How to Run:
+1. Ensure that `sample.txt` exists in the same directory as `task1.py`.
+2. Run the script:
+   ```bash
+   python task1.py
+````
 
-The program uses Python's built-in `math` module to perform these operations.
+### Expected Output:
+
+* Displays each line of the file with line numbers.
+* Prints an error message if `sample.txt` is not found.
 
 ---
 
-## Features
-- **Task 1**: Factorial calculation using a function, supporting both loop and recursion approaches.
-- **Task 2**: Utilizes the `math` module to calculate square root, natural logarithm, and sine of the entered number.
+## Task 2: Write and Append Data to a File, Then Read It
 
-## Requirements
-- Python 3.x
-- The program uses Python's built-in `math` module (for Task 2).
+### Problem:
 
-## How to Run
+1. Write user input to `output.txt`.
+2. Append more text to the same file.
+3. Read and display the final content of the file.
 
-### Task 1: Calculate Factorial Using a Function
+### How to Run:
 
-1. Download or clone the repository.
-2. Open a terminal or command prompt.
-3. Navigate to the directory where the `factorial_program.py` script is located.
-4. Run the program by typing:
+1. Run the script:
+
+   ```bash
+   python task2.py
+   ```
+
+2. Enter text when prompted to write and append data.
+
+### Expected Output:
+
+* The script will display the final content of `output.txt` after both write and append operations.
+
+---
+
+### Key Changes:
+1. **Task 1** uses `task1.py`.
+2. **Task 2** uses `task2.py`.
+
+### Next Steps:
+1. Save this as `README.md`.
+2. Ensure you have the two Python scripts:
+   - `task1.py` for Task 1.
+   - `task2.py` for Task 2.
+
+Let me know if this works for you!
+```

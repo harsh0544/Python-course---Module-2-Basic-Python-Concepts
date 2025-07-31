@@ -1,13 +1,15 @@
-# Python File Handling Tasks
 
-This repository contains two Python scripts that perform file handling tasks.
+# Python File Handling Tasks
 
 ## Task 1: Read a File and Handle Errors
 
-### Problem:
-1. Open and read `sample.txt`.
-2. Print its content line by line.
-3. Handle `FileNotFoundError` if the file does not exist.
+### Objective:
+This script reads a text file called `sample.txt`, and it prints each line of the file along with its line number. If the file does not exist, it gracefully handles the error and displays a message indicating the issue.
+
+### Steps:
+1. Open and read the contents of `sample.txt`.
+2. Print the contents of the file line by line, each with a line number.
+3. If the file is missing, display an error message (`FileNotFoundError`).
 
 ### How to Run:
 1. Ensure that `sample.txt` exists in the same directory as `task1.py`.
@@ -18,44 +20,69 @@ This repository contains two Python scripts that perform file handling tasks.
 
 ### Expected Output:
 
-* Displays each line of the file with line numbers.
-* Prints an error message if `sample.txt` is not found.
+* If the file exists, the program will output each line of the file with the corresponding line number.
+* If the file is missing, it will print an error message like:
+
+  ```
+  Error: The file 'sample.txt' does not exist.
+  ```
 
 ---
 
-## Task 2: Write and Append Data to a File, Then Read It
+## Task 2: Write, Append, and Read Data
 
-### Problem:
+### Objective:
 
-1. Write user input to `output.txt`.
-2. Append more text to the same file.
-3. Read and display the final content of the file.
+This script allows the user to interact with a file named `output.txt`. It first prompts the user for input, writes it to the file, then appends additional input to the same file. Finally, it reads and displays the entire content of the file.
+
+### Steps:
+
+1. Prompt the user for input and write it to `output.txt`.
+2. Prompt the user for additional input and append it to `output.txt`.
+3. Open the file and display the entire content after both write and append operations.
 
 ### How to Run:
 
-1. Run the script:
+1. Simply run the script, and it will prompt you to enter text.
+2. The script will then write the first input, append the second input, and display the contents of the file.
 
-   ```bash
-   python task2.py
-   ```
-
-2. Enter text when prompted to write and append data.
+```bash
+python task2.py
+```
 
 ### Expected Output:
 
-* The script will display the final content of `output.txt` after both write and append operations.
+* The user will first be prompted to enter some text to write to the file.
+* After writing, the user will be prompted again to append more text.
+* The final content of the file will be displayed, which should include both inputs, separated by newlines.
+
+Example interaction:
+
+```
+Enter some text to write to the file: Hello, this is the first line.
+Enter additional text to append to the file: This is the second line.
+
+Final content of the file:
+Hello, this is the first line.
+This is the second line.
+```
 
 ---
 
-### Key Changes:
-1. **Task 1** uses `task1.py`.
-2. **Task 2** uses `task2.py`.
+### Notes:
 
-### Next Steps:
-1. Save this as `README.md`.
-2. Ensure you have the two Python scripts:
-   - `task1.py` for Task 1.
-   - `task2.py` for Task 2.
+* Both tasks handle common file operations such as reading, writing, and appending.
+* The tasks also demonstrate basic error handling and user interaction with file I/O in Python.
 
-Let me know if this works for you!
+```
+
+---
+
+### Breakdown of Sections:
+1. **Task Descriptions**: Detailed explanation of what each task does.
+2. **Step-by-step instructions**: What the user should expect in the process of running the scripts.
+3. **How to run**: Clear instructions on how to run the scripts using the command line.
+4. **Expected output**: What the user should see when they execute the script.
+
+This version of the `README.md` is more detailed and will help users understand exactly what each task is doing, how to run the scripts, and what to expect in terms of output. Let me know if you need more adjustments!
 ```

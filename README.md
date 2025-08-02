@@ -1,88 +1,101 @@
+---
+# Python Scripting Tasks
 
-# Python File Handling Tasks
+This repository contains Python scripts that demonstrate basic operations with dictionaries and lists.
 
-## Task 1: Read a File and Handle Errors
+## Task 1: Dictionary Lookup for Student Marks
 
-### Objective:
-This script reads a text file called `sample.txt`, and it prints each line of the file along with its line number. If the file does not exist, it gracefully handles the error and displays a message indicating the issue.
+### Problem Statement:
 
-### Steps:
-1. Open and read the contents of `sample.txt`.
-2. Print the contents of the file line by line, each with a line number.
-3. If the file is missing, display an error message (`FileNotFoundError`).
+Create a Python program that:
 
-### How to Run:
-1. Ensure that `sample.txt` exists in the same directory as `task1.py`.
-2. Run the script:
+1. Creates a dictionary where student names are keys and their marks are values.
+2. Asks the user to input a student's name.
+3. Retrieves and displays the corresponding marks.
+4. If the student’s name is not found, display an appropriate message.
+
+### Solution:
+
+```python
+# Create a dictionary with student names and marks
+students = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "David": 88
+}
+
+# Ask the user to input a student's name
+student_name = input("Enter the student's name: ")
+
+# Retrieve and display the corresponding marks or show an error message
+if student_name in students:
+    print(f"{student_name}'s marks: {students[student_name]}")
+else:
+    print(f"{student_name} not found in the database.")
+```
+
+### Explanation:
+
+1. A dictionary is created with predefined student names as keys and marks as values.
+2. The program asks the user to input a student's name.
+3. The program checks if the name exists in the dictionary and prints the corresponding marks or an error message if not found.
+
+---
+
+## Task 2: List Slicing
+
+### Problem Statement:
+
+Write a Python program that:
+
+1. Creates a list of numbers from 1 to 10.
+2. Extracts the first five elements from the list.
+3. Reverses these extracted elements.
+4. Prints both the extracted list and the reversed list.
+
+### Solution:
+
+```python
+# Create a list of numbers from 1 to 10
+numbers = list(range(1, 11))
+
+# Extract the first five elements
+first_five = numbers[:5]
+
+# Reverse the extracted elements
+reversed_five = first_five[::-1]
+
+# Print both the extracted list and the reversed list
+print("First five elements:", first_five)
+print("Reversed list:", reversed_five)
+```
+
+### Explanation:
+
+1. A list of numbers from 1 to 10 is created using `range()`.
+2. The first five elements are sliced using `numbers[:5]`.
+3. The extracted elements are reversed using list slicing (`[::-1]`).
+4. Both the original extracted list and the reversed list are printed.
+
+---
+
+## Requirements
+
+* Python 3.x
+
+---
+
+## How to Run:
+
+1. Save each task in its own `.py` file (e.g., `task1.py`, `task2.py`).
+2. Open a terminal or command prompt.
+3. Navigate to the directory where the script is saved.
+4. Run the program by typing:
+
    ```bash
-   python task1.py
-````
+   python task1.py  # For Task 1
+   python task2.py  # For Task 2
+   ```
 
-### Expected Output:
-
-* If the file exists, the program will output each line of the file with the corresponding line number.
-* If the file is missing, it will print an error message like:
-
-  ```
-  Error: The file 'sample.txt' does not exist.
-  ```
-
----
-
-## Task 2: Write, Append, and Read Data
-
-### Objective:
-
-This script allows the user to interact with a file named `output.txt`. It first prompts the user for input, writes it to the file, then appends additional input to the same file. Finally, it reads and displays the entire content of the file.
-
-### Steps:
-
-1. Prompt the user for input and write it to `output.txt`.
-2. Prompt the user for additional input and append it to `output.txt`.
-3. Open the file and display the entire content after both write and append operations.
-
-### How to Run:
-
-1. Simply run the script, and it will prompt you to enter text.
-2. The script will then write the first input, append the second input, and display the contents of the file.
-
-```bash
-python task2.py
-```
-
-### Expected Output:
-
-* The user will first be prompted to enter some text to write to the file.
-* After writing, the user will be prompted again to append more text.
-* The final content of the file will be displayed, which should include both inputs, separated by newlines.
-
-Example interaction:
-
-```
-Enter some text to write to the file: Hello, this is the first line.
-Enter additional text to append to the file: This is the second line.
-
-Final content of the file:
-Hello, this is the first line.
-This is the second line.
-```
-
----
-
-### Notes:
-
-* Both tasks handle common file operations such as reading, writing, and appending.
-* The tasks also demonstrate basic error handling and user interaction with file I/O in Python.
-
-```
-
----
-
-### Breakdown of Sections:
-1. **Task Descriptions**: Detailed explanation of what each task does.
-2. **Step-by-step instructions**: What the user should expect in the process of running the scripts.
-3. **How to run**: Clear instructions on how to run the scripts using the command line.
-4. **Expected output**: What the user should see when they execute the script.
-
-This version of the `README.md` is more detailed and will help users understand exactly what each task is doing, how to run the scripts, and what to expect in terms of output. Let me know if you need more adjustments!
-```
+--

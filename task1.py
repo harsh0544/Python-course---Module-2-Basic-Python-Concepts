@@ -1,9 +1,13 @@
-try:
-    print("Reading File Content:")
-    with open("sample.txt") as file:
-        for i, line in enumerate(file, 1):
-            print(f"Line {i}: {line.strip()}")
-except FileNotFoundError:
-    print("Error: The file 'sample.txt' was not found.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+students = {
+    "harsh": 85,
+    "rohit": 92,
+    "shivam": 78,
+    "prachi": 88
+}
+
+student_name = input("Enter the student's name: ")
+
+if student_name in students:
+    print(f"{student_name}'s marks: {students[student_name]}")
+else:
+    print(f"{student_name} not found in the database.")
